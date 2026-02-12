@@ -1,0 +1,36 @@
+{
+  "proposals": [
+    {
+      "id": 1,
+      "userName": "unknown",
+      "partnerName": "bla bla",
+      "relationshipType": "crush",
+      "proposalStyle": "romantic",
+      "loveMessage": "kknnci",
+      "createdAt": "2026-02-12T08:10:25.643Z"
+    },
+    {
+      "id": 2,
+      "userName": "unknown",
+      "partnerName": "bla bla",
+      "relationshipType": "crush",
+      "proposalStyle": "classic",
+      "loveMessage": "dvadc",
+      "createdAt": "2026-02-12T08:16:22.392Z"
+    }
+  ],
+  "partnerNames": [
+    {
+      "id": 1,
+      "name": "bla bla",
+      "relationshipType": "crush",
+      "createdAt": "2026-02-12T08:10:25.643Z"
+    },
+    {
+      "id": 2,
+      "name": "bla bla",
+      "relationshipType": "crush",
+      "createdAt": "2026-02-12T08:16:22.392Z"
+    }
+  ]
+}

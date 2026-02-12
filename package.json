@@ -1,0 +1,16 @@
+{
+  "name": "valentines-proposal",
+  "version": "1.0.0",
+  "description": "Valentine's Day Special Proposal Website with real-time server and database",
+  "main": "server.js",
+  "scripts": {
+  "start": "node server.js",
+  "dev": "node server.js",
+  "start:open": "start \"\" \"http://localhost:3000\" && node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "socket.io": "^4.7.2"
+  }
+}

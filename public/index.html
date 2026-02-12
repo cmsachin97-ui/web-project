@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💕 Valentine's Day Proposal | A Special Way to Say I Love You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Floating Hearts Background -->
+  <div class="hearts-bg" aria-hidden="true">
+    <div class="heart heart-1">♥</div>
+    <div class="heart heart-2">♥</div>
+    <div class="heart heart-3">♥</div>
+    <div class="heart heart-4">♥</div>
+    <div class="heart heart-5">♥</div>
+    <div class="heart heart-6">♥</div>
+    <div class="heart heart-7">♥</div>
+    <div class="heart heart-8">♥</div>
+  </div>
+
+  <div class="container">
+    <!-- Progress Steps -->
+    <nav class="progress-bar">
+      <div class="step-indicator active" data-step="1">
+        <span class="step-num">1</span>
+        <span class="step-label">Welcome</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step-indicator" data-step="2">
+        <span class="step-num">2</span>
+        <span class="step-label">Your Name</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step-indicator" data-step="3">
+        <span class="step-num">3</span>
+        <span class="step-label">Their Name</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step-indicator" data-step="4">
+        <span class="step-num">4</span>
+        <span class="step-label">Style</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step-indicator" data-step="5">
+        <span class="step-num">5</span>
+        <span class="step-label">Message</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step-indicator" data-step="6">
+        <span class="step-num">6</span>
+        <span class="step-label">Proposal</span>
+      </div>
+    </nav>
+
+    <!-- Step 1: Welcome -->
+    <section id="step-1" class="step active">
+      <div class="step-content">
+        <h1 class="title">💕 Will You Be Mine? 💕</h1>
+        <p class="subtitle">Create a magical Valentine's Day proposal in just a few steps</p>
+        <p class="intro-text">This special website lets you propose to your crush, boyfriend, or girlfriend in a unique and memorable way. Every name you enter is stored forever! 💝</p>
+        <button class="btn btn-primary" data-next="2">Begin Your Love Story</button>
+      </div>
+    </section>
+
+    <!-- Step 2: Your Name -->
+    <section id="step-2" class="step">
+      <div class="step-content">
+        <h2 class="step-title">What's your name?</h2>
+        <p class="step-desc">The one who's about to make someone's day special ✨</p>
+        <div class="input-group">
+          <input type="text" id="userName" placeholder="Enter your name" class="input-field" maxlength="50" required>
+          <span class="input-icon">👤</span>
+        </div>
+        <button class="btn btn-primary" data-next="3" id="btn-step-2">Continue</button>
+      </div>
+    </section>
+
+    <!-- Step 3: Partner/Crush Name -->
+    <section id="step-3" class="step">
+      <div class="step-content">
+        <h2 class="step-title">Who are you proposing to?</h2>
+        <p class="step-desc">Enter your crush's, boyfriend's, or girlfriend's name 💘</p>
+        <div class="relationship-selector">
+          <label class="radio-card" data-type="crush">
+            <input type="radio" name="relationship" value="crush" checked>
+            <span class="radio-label">💕 My Crush</span>
+          </label>
+          <label class="radio-card" data-type="boyfriend">
+            <input type="radio" name="relationship" value="boyfriend">
+            <span class="radio-label">💙 Boyfriend</span>
+          </label>
+          <label class="radio-card" data-type="girlfriend">
+            <input type="radio" name="relationship" value="girlfriend">
+            <span class="radio-label">💗 Girlfriend</span>
+          </label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="partnerName" placeholder="Enter their name" class="input-field" maxlength="50" required>
+          <span class="input-icon">💌</span>
+        </div>
+        <p class="storage-notice">✓ This name will be saved in our database forever!</p>
+        <button class="btn btn-primary" data-next="4" id="btn-step-3">Continue</button>
+      </div>
+    </section>
+
+    <!-- Step 4: Proposal Style -->
+    <section id="step-4" class="step">
+      <div class="step-content">
+        <h2 class="step-title">Choose your proposal style</h2>
+        <p class="step-desc">Pick how you want to express your love 🌹</p>
+        <div class="style-selector">
+          <label class="style-card" data-style="romantic">
+            <input type="radio" name="proposalStyle" value="romantic">
+            <span class="style-icon">🌹</span>
+            <span class="style-name">Romantic</span>
+          </label>
+          <label class="style-card" data-style="playful">
+            <input type="radio" name="proposalStyle" value="playful">
+            <span class="style-icon">😍</span>
+            <span class="style-name">Playful</span>
+          </label>
+          <label class="style-card" data-style="classic">
+            <input type="radio" name="proposalStyle" value="classic">
+            <span class="style-icon">💍</span>
+            <span class="style-name">Classic</span>
+          </label>
+          <label class="style-card" data-style="poetic">
+            <input type="radio" name="proposalStyle" value="poetic">
+            <span class="style-icon">📜</span>
+            <span class="style-name">Poetic</span>
+          </label>
+        </div>
+        <button class="btn btn-primary" data-next="5" id="btn-step-4">Continue</button>
+      </div>
+    </section>
+
+    <!-- Step 5: Love Message -->
+    <section id="step-5" class="step">
+      <div class="step-content">
+        <h2 class="step-title">Add a personal message (optional)</h2>
+        <p class="step-desc">Make it extra special with your own words 💝</p>
+        <div class="input-group textarea-group">
+          <textarea id="loveMessage" placeholder="Write your love message here..." class="input-field textarea-field" rows="4" maxlength="500"></textarea>
+        </div>
+        <button class="btn btn-primary" data-next="6" id="btn-step-5">Create My Proposal</button>
+      </div>
+    </section>
+
+    <!-- Step 6: Final Proposal -->
+    <section id="step-6" class="step">
+      <div class="step-content proposal-result">
+        <div id="proposal-display" class="proposal-card">
+          <div class="proposal-hearts">♥ ♥ ♥</div>
+          <h2 id="proposal-greeting" class="proposal-greeting"></h2>
+          <p id="proposal-message" class="proposal-message"></p>
+          <p id="proposal-signature" class="proposal-signature"></p>
+          <div class="proposal-hearts">♥ ♥ ♥</div>
+        </div>
+        <div class="success-badge" id="success-badge">
+          <span>✓ Saved to database!</span>
+        </div>
+        <button class="btn btn-primary" id="share-btn">Share This Proposal</button>
+        <button class="btn btn-secondary" id="new-proposal-btn">Create Another</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Toast for notifications -->
+  <div id="toast" class="toast"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
